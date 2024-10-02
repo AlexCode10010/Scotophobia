@@ -1,5 +1,8 @@
 package alexcode.scotophobia;
 
+import alexcode.scotophobia.block.ModBlocks;
+import alexcode.scotophobia.item.ModItemGroups;
+import alexcode.scotophobia.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,10 @@ public class Scotophobia implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("cereal goes before milk. oh also Scotophobia loaded or something idk.");
+
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
