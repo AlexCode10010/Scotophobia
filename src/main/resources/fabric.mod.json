@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "scotophobia",
+	"version": "${version}",
+	"name": "Scotophobia",
+	"description": "Scotophobia is a very cool mod, it does... this, edit this file to change your mod's description.",
+	"authors": [
+		"AlexCode"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/scotophobia/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"alexcode.scotophobia.Scotophobia"
+		],
+		"client": [
+			"alexcode.scotophobia.ScotophobiaClient"
+		],
+		"fabric-datagen": [
+			"alexcode.scotophobia.ScotophobiaDataGenerator"
+		]
+	},
+	"mixins": [
+		"scotophobia.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
